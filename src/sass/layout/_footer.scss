@@ -57,12 +57,28 @@
   }
 }
 
-.back-to-top i {
-  color: $white-color;
-  margin: 1rem 0 $default-font-size;
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  z-index: 999;
   transition: all 0.2s ease-in;
 
   &:hover {
     transform: translateY(-2px);
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  i {
+    color: $white-color;
+    font-size: 4rem;
   }
 }
