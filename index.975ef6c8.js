@@ -617,7 +617,9 @@ heroSection.addEventListener("click", (e)=>{
 });
 // Add confetti effect to GET IN TOUCH button
 const getInTouchButton = document.querySelector('a[href="mailto:tran.dev.327@gmail.com"]');
+console.log("getInTouchButton:", getInTouchButton);
 if (getInTouchButton) getInTouchButton.addEventListener("mouseenter", ()=>{
+    console.log("Confetti effect triggered!");
     const rect = getInTouchButton.getBoundingClientRect();
     const buttonCenterX = (rect.left + rect.right) / 2 / window.innerWidth;
     const buttonCenterY = (rect.top + rect.bottom) / 2 / window.innerHeight;
